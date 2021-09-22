@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Conference Scheduling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Computer Science Engineering Thesis - Conference Scheduling</h1>
+                            <p>Conferences are an important event for the researchers and scientifics to present their own work. To make this event possible require a big number of elements and coordination between a lot of people, which is not an easy task to do.</p>
+                            <p>One of the most important aspects of a Conference is the schedule that will have, usually this is made based on the presenters availability, which is the logical way to do it, since is the information given to the organizers beforehand. </p>
+                            <p>This way on making schedules is not always the best way, since it will leave many assistants dissatisfied, cause they will not be able to attend every desired talk. With this problem in mind, borns the way to make schedules considering the preferences from every assistant to the conference.</p>
+                            <p>The goal to  this problem is to Minimize the conflicts of each assistant and Minimize the jumps between each session.</p>
+                            <p>Having all this in mind, in this thesis I designed and developed a genetic algorithm to try to create the best schedule to given conferences.</p>
+							<h2>Genetic Algorithm</h2>
+                            <p>To try to find a good schedule was used genetic algorithms, which are based on the Darwin's theory of evolution, in which a population will try to survive to the conditions given, having crossing, mutation, selection to adapt to the new conditions through the different generations.</p>
+                            <p>This algorithm was tested on two different types of instances, small ones which are fake and fabricated by myself and the real ones, which are based on real conferences and considering the preferences of the actual assistants to those Conferences.</p>
+                            <p>Also these instances were testes on a commercial solver called gurobi to compare the results.</p>
+                            <p>The solutions given by the solver:</p>
+                            <span class="image fit"><img src="images/solver.jpg" alt="" /></span>
+                            <p>The solutions given by the algorithm (Bold ones are the best solution between configurations):</p>
+                            <span class="image fit"><img src="images/genetic.jpg" alt="" /></span>
+
+                            <p>In general the results from the genetic algorithm were pretty good in comparison with the solver. In most instances got better results in 20% of the time that the solver took. </p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
